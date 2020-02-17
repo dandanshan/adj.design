@@ -9,7 +9,7 @@
   "license": "ISC",
   "dependencies": {
     "gulp-file-include": "^2.0.1",
-    "npm": "^6.4.1"
+    "npm": "^6.13.4"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
