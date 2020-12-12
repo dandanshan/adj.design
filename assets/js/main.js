@@ -9,19 +9,10 @@ $(document).ready(function () {
 
     //mouse follow
     var $pointer = $('.pointer');
-
-    // function moveCircle(e) {
-    //     TweenLite.to($pointer, 0.3, {
-    //         css: {
-    //             left: e.pageX,
-    //             top: e.pageY
-    //         }
-    //     });
-    // }
     window.onload = function(){
         var bsDiv = document.getElementById('pointer');
         var x, y;
-// On mousemove use event.clientX and event.clientY to set the location of the div to the location of the cursor:
+    // On mousemove use event.clientX and event.clientY to set the location of the div to the location of the cursor:
         window.addEventListener('mousemove', function(event){
             x = event.clientX;
             y = event.clientY;                    
