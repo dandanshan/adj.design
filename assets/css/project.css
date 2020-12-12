@@ -1157,6 +1157,7 @@ img {
   color: #d1d1d6;
   display: inline-block;
   margin-right: 5px;
+  text-transform: uppercase;
 }
 
 .project__content .tag > div:before {
