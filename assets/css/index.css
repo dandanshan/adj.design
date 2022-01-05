@@ -474,51 +474,11 @@ body {
   padding: 120px 0;
 }
 
-.section--black:before {
-  content: '';
-  width: calc((100%/6*5) - (50% - 600px) + 25px);
-  height: 60px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: #fafafa;
-}
-
-.section--black:after {
-  content: "";
-  width: calc((100% / 3) * 2);
-  height: 60px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: #fafafa;
-}
-
 .section--gray {
   background: #d1d1d6;
   color: #1c1c1e;
   position: relative;
   padding: 120px 0;
-}
-
-.section--gray:before {
-  content: '';
-  width: calc((100%/6*5) - (50% - 600px) + 25px);
-  height: 60px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: #fafafa;
-}
-
-.section--gray:after {
-  content: "";
-  width: calc((100% / 3) * 2);
-  height: 60px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: #fafafa;
 }
 
 .wrap {
@@ -650,7 +610,7 @@ body {
 }
 
 .nav .menu__name {
-  margin: 0 0 0 25px;
+  margin: 0 0 0 40px;
   color: #fafafa;
   font-size: 1.25rem;
   font-weight: 700;
@@ -1144,41 +1104,14 @@ img {
   flex-wrap: wrap;
 }
 
-#landing .logo {
-  width: calc(100%/12 * 7);
-  float: left;
-}
-
-#landing .logo.adj {
-  display: inline-block;
-}
-
-#landing .logo.adj svg {
-  width: 100%;
-}
-
-#landing .logo.adj path {
-  stroke: #1c1c1e;
-  stroke-width: 0.3;
-  fill: transparent;
-  transition: all 0.3s ease-in;
-}
-
-#landing .logo.adj:hover path {
-  fill: #1c1c1e;
-}
-
-#landing .logo h1 {
-  height: 0;
-  margin: 0;
-  width: 0;
-  overflow: hidden;
-}
-
 #landing .slogan {
-  width: calc(100%/12 * 5);
+  width: calc(100%/12 * 7);
   padding-left: 60px;
   font-size: 1.5rem;
+}
+
+#landing .slogan .h2 > span {
+  color: #ff5d1c;
 }
 
 .project {
@@ -1188,6 +1121,11 @@ img {
   text-decoration: none;
   margin-bottom: 40px;
   overflow: hidden;
+}
+
+.project:hover img {
+  opacity: .4;
+  transition: all 0.3s ease;
 }
 
 .project__media {
@@ -1241,8 +1179,7 @@ img {
 .project__content .tag > div {
   color: #d1d1d6;
   display: inline-block;
-  margin-right: 5px;
-  text-transform: uppercase;
+  margin-right: 10px;
 }
 
 .project__content .tag > div:before {
@@ -1288,14 +1225,8 @@ img {
    Media Queries
    ========================================================================== */
 @media only screen and (max-width: 1200px) {
-  #landing .logo {
-    width: calc(100%/5 * 2);
-  }
-  #landing .logo.adj path {
-    stroke-width: 0.7;
-  }
   #landing .slogan {
-    width: calc(100%/5 * 3);
+    width: calc(100%/5 * 4);
   }
 }
 
@@ -1333,13 +1264,12 @@ img {
   #landing {
     padding: 80px 0 40px 0;
   }
-  #landing .logo {
-    width: 100%;
-    max-width: 400px;
-  }
   #landing .slogan {
     width: 100%;
     padding: 20px 0 0 0;
     font-size: 1.875rem;
+  }
+  #landing .slogan .h2 {
+    font-size: 2.25rem;
   }
 }
