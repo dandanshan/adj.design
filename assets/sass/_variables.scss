@@ -1,9 +1,0 @@
-// gray
-$black: #000;
-
-
-
-
-@function color($color-name) {
-  @return map-get($colors, $color-name);
-}
