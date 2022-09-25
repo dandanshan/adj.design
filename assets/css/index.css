@@ -1446,8 +1446,12 @@ img {
   margin-bottom: 8px;
 }
 
-#work .grid--byProject .label-1, #work .grid--byProject .hashtag {
+#work .grid--byProject .label-1 {
   display: block;
+}
+
+#work .grid--byProject .hashtag {
+  display: inline-block;
 }
 
 #about img {
