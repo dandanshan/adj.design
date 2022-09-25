@@ -1442,6 +1442,14 @@ img {
   margin-bottom: 40px;
 }
 
+#work .grid--byProject .h-2 {
+  margin-bottom: 8px;
+}
+
+#work .grid--byProject .label-1, #work .grid--byProject .hashtag {
+  display: block;
+}
+
 #about img {
   width: 100%;
   order: 1;
@@ -1465,6 +1473,9 @@ img {
 @media only screen and (max-width: 992px) {
   #work .grid--byProject {
     margin-bottom: 64px;
+  }
+  #work .grid--byProject .label-1, #work .grid--byProject .hashtag {
+    display: none;
   }
   #about img {
     width: 100%;
