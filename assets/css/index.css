@@ -1089,7 +1089,7 @@ img {
   border-top: 4px solid #2F80ED;
 }
 
-.callout .h-4 {
+.callout .h-4, .callout .h-5 {
   margin-bottom: 8px;
 }
 
@@ -1378,6 +1378,9 @@ img {
   }
   .grid--top .article__media {
     padding-left: 0 !important;
+  }
+  .callout {
+    padding: 24px;
   }
 }
 
