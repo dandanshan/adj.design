@@ -1482,7 +1482,7 @@ img {
 
 @media only screen and (max-width: 768px) {
   .exp__item {
-    padding: 60px 0 20px 0;
+    padding: 40px 0;
     padding-left: 0;
   }
   .exp__item > span {
@@ -1491,6 +1491,7 @@ img {
   }
   .exp__img {
     width: 100%;
+    max-width: 240px;
     height: auto;
   }
 }
