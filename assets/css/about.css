@@ -423,17 +423,17 @@ p, .p-1, ul.list, .chip-2, .exp__title span, .exp__desc {
 
 p, .p-1 {
   color: #1c1c1e;
-  margin: 0 0 24px 0;
+  margin: 24px 0;
 }
 
 .p-2 {
   color: #1c1c1e;
-  margin: 0 0 24px 0;
+  margin: 24px 0;
 }
 
 .p-3 {
   color: #2F80ED;
-  margin: 0 0 24px 0;
+  margin: 24px 0;
 }
 
 /*---------- caption ----------*/
@@ -566,6 +566,12 @@ img {
   color: #fafafa;
 }
 
+.section--white {
+  background: #fafafa;
+  color: #1c1c1e;
+  position: relative;
+}
+
 .section--gray {
   background: #868694;
   color: #1c1c1e;
@@ -573,8 +579,15 @@ img {
 }
 
 .wrap {
-  max-width: 1140px;
   margin: 0 auto;
+}
+
+.wrap--wide {
+  max-width: 1140px;
+}
+
+.wrap--narrow {
+  max-width: 960px;
 }
 
 .main {
@@ -587,7 +600,7 @@ img {
   top: 0;
   left: 0;
   right: 0;
-  margin: 50px 0;
+  padding: 50px 0;
   height: 45px;
   z-index: 99;
   mix-blend-mode: exclusion;
@@ -746,6 +759,7 @@ img {
 
 .footer {
   padding: 80px 0 40px 0;
+  background: #fafafa;
 }
 
 .footer:before, .footer:after {
@@ -1137,6 +1151,11 @@ img {
 }
 
 /*---------- grid ----------*/
+.grid--row {
+  display: grid;
+  grid-row-gap: 40px;
+}
+
 .grid--equal {
   display: grid;
   flex-wrap: wrap;
@@ -1163,6 +1182,15 @@ img {
   grid-column-gap: 40px;
   grid-row-gap: 40px;
   grid-template-columns: 2fr 4fr;
+  grid-template-rows: auto auto;
+}
+
+.grid--4by2 {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  grid-template-columns: 4fr 2fr;
   grid-template-rows: auto auto;
 }
 
@@ -1314,6 +1342,10 @@ img {
   padding-right: 16px;
 }
 
+.m-0 {
+  margin: 0;
+}
+
 .mt-24 {
   margin-top: 24px;
 }
@@ -1335,6 +1367,10 @@ img {
    ========================================================================== */
 @media only screen and (max-width: 992px) {
   /*---------- grid ----------*/
+  .grid--row {
+    display: grid;
+    grid-row-gap: 40px;
+  }
   .grid--equal {
     display: grid;
     flex-wrap: wrap;
@@ -1353,7 +1389,7 @@ img {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
-  .grid--2by4 {
+  .grid--2by4, .grid--4by2 {
     display: grid;
     grid-auto-columns: 1fr;
     grid-column-gap: 40px;
