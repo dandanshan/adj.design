@@ -1111,6 +1111,10 @@ img {
   margin-bottom: 8px;
 }
 
+.callout p {
+  margin-top: 0;
+}
+
 /*---------- box, card ----------*/
 .borderbox {
   display: flex;
