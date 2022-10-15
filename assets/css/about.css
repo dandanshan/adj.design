@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+TC:wght@400;700;900&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+TC:wght@400;700;900&display=swap");
 /*---------- transform ----------*/
 /*---------- arrow ----------*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -517,7 +517,7 @@ body {
   background: #fafafa;
   color: #1c1c1e;
   line-height: 1.4;
-  font-family: 'Inter', 'Roboto', 'Noto Sans TC', 'Helvetica Neue', 'Helvetica', 'Tahoma', 'Arial', sans-serif;
+  font-family: 'Inter', 'Noto Sans TC', 'Helvetica Neue', 'Helvetica', 'Tahoma', 'Arial', sans-serif;
 }
 
 body {

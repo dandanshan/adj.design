@@ -23,8 +23,6 @@ $(document).ready(function () {
 		}, false);
 	}
 
-	$(window).on('mousemove', moveCircle);
-
 	$(window).scroll(function () {
 
 		var top = $pointer.position().top
