@@ -91,7 +91,6 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */
 }
@@ -524,10 +523,6 @@ body {
   overflow-x: hidden;
 }
 
-img {
-  line-height: 1;
-}
-
 ::-moz-selection {
   color: #fafafa;
   background: #1c1c1e;
@@ -803,11 +798,16 @@ img {
   mix-blend-mode: exclusion;
   z-index: 99;
   pointer-events: none;
-  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 img {
   width: 100%;
+  height: auto;
+}
+
+img, .img {
+  line-height: 1;
 }
 
 /* ==========================================================================
@@ -836,6 +836,7 @@ img {
   .header {
     margin: 24px 0;
     height: 34px;
+    padding: 0;
   }
   .header__logo {
     width: 90px;
@@ -976,8 +977,8 @@ img {
 .icon__social:before, .icon__social:after {
   width: 32px;
   height: 32px;
-  background-image: url("../img/icon_social@3x.png");
-  background-size: 32px 192px;
+  background-image: url("../img/icon_social.png");
+  background-size: 32px 96px;
   background-position-x: 0;
   margin: 0 auto;
   display: block;
@@ -997,18 +998,6 @@ img {
 
 .icon__social--li:before, .icon__social--li:after {
   background-position-y: -64px;
-}
-
-.icon__social--db:before, .icon__social--db:after {
-  background-position-y: -96px;
-}
-
-.icon__social--bh:before, .icon__social--bh:after {
-  background-position-y: -128px;
-}
-
-.icon__social--md:before, .icon__social--md:after {
-  background-position-y: -160px;
 }
 
 .icon__more:before, .icon__more:after {
@@ -1429,12 +1418,6 @@ img {
   }
   .grid--byProject > div {
     flex: 1 1 0;
-  }
-  .grid__lines {
-    grid-template-columns: calc((100% - 1200px) / 2) 1fr 1fr;
-  }
-  .grid__lines > div:nth-child(3), .grid__lines div:nth-child(4) {
-    display: none;
   }
   .grid--twoColumn {
     grid-template-columns: 1fr;
