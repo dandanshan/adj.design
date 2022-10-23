@@ -107,7 +107,7 @@
           </div>
           <div class="grid--4by2">
             <div>
-              <h3 class="h-3">專案背景</h3>
+              <h4 class="h-4">專案背景</h4>
               <div>
                 <p>Academy
                   是台達電子的線上學習平台，多語系操作介面，提供台達全球教育訓練或行銷推廣使用。它擁有影音、文件、測驗等多元學習方式，提供學習者、講師、內容提供者及管理員四種角色操作使用，並同時滿足
@@ -133,11 +133,11 @@
     <div class="section section--white">
       <div class="wrap wrap--narrow">
         <div class="wrapper">
-          <h3 class="h-3">專案概覽</h3>
+          <h4 class="h-4">專案概覽</h4>
           <div class="grid--equalSm">
             <div class="overview">
               <h5 class="h-5">團隊目標</h5>
-              <p>團隊希望為測驗建立模組增加「上傳圖片」及「自訂分數」的功能，同時優化模組操作體驗，讓產品符合更多使用情境。</p>
+              <p>基於先前的用戶回饋，為測驗建立模組增加「上傳圖片」及「自訂分數」的功能，同時優化操作體驗，讓產品符合更多使用情境。</p>
             </div>
             <div class="overview">
               <h5 class="h-5">角色與產出</h5>
@@ -148,7 +148,7 @@
               <p>因應模組操作體驗的優化，需要說服開發團隊，進行程式面的重構。</p>
             </div>
             <div class="overview">
-              <h5 class="h-5">專案與成果</h5>
+              <h5 class="h-5">成果與影響</h5>
               <p>成功提升操作效率，降低用戶在建立測驗時的認知負荷，可以快速完成任務。</p>
             </div>
           </div>
@@ -158,7 +158,7 @@
     <div class="section section--white">
       <div class="wrap wrap--narrow">
         <div class="wrapper">
-          <h3 class="h-3">設計流程</h3>
+          <h4 class="h-4">設計流程</h4>
           <img src="/assets/img/project/academy-assmt_design-flow.svg" alt="" loading="lazy">
         </div>
       </div>
@@ -166,14 +166,15 @@
     <div class="section section--white">
       <div class="wrap wrap--narrow">
         <div class="wrapper">
-          <h3 class="h-3">用戶研究</h3>
-          <p>專案前期，我們進行用戶測試與訪談來定義核心問題，了解用戶如何理解「測驗」這個模組，然後整理收集到的資料和洞察，最後製作一份旅程地圖，幫助團隊更好的理解用戶所遇到的問題。</p>
+          <h4 class="h-4">用戶研究</h4>
+          <p>專案前期，我們進行用戶測試與訪談來定義核心問題，了解用戶如何理解「測驗」這個模組，包括:  習慣的操作流程是什麼？對於 Quiz 與 Exam 字面上的理解是什麼？在規劃測驗時通常怎麼訂定分數？...等，最後整理收集到的資料和洞察，最後製作一份旅程地圖，幫助團隊更好的理解用戶所遇到的問題。</p>
           <div class="callout mb-24">
             <p>透過研究，我們學習到：</p>
             <h5 class="h-5">內容提供者不知道如何操作新增答案選項</h5>
             <h5 class="h-5">內容提供者不確定「Quiz」跟「Exam」兩種模式的差異</h5>
             <h5 class="h-5">內容提供者要離開編輯頁面時，會擔心內容是否有被儲存</h5>
             <h5 class="h-5">內容提供者習慣先為測驗命名，或先設定測驗模式</h5>
+            <h5 class="h-5">內容提供者不確定如何換算通關標準與總分</h5>
           </div>
           <img src="/assets/img/project/academy-assmt_user-journey-map.png"
             alt="" class="mb-24" loading="lazy">
@@ -186,7 +187,7 @@
     <div class="section section--white">
       <div class="wrap wrap--narrow">
         <div class="wrapper">
-          <h3 class="h-3">定義問題</h3>
+          <h4 class="h-4">定義問題</h4>
           <div>
             <div class="text">
               <h5 class="h-5">1. 功能頁面架構混亂</h5>
@@ -212,7 +213,7 @@
     <div class="section section--white">
       <div class="wrap wrap--narrow">
         <div class="wrapper">
-          <h3 class="h-3">建立假設</h3>
+          <h4 class="h-4">建立假設</h4>
           <div class="grid--equalTree">
             <div>
               <div class="indicator">01</div>
@@ -235,29 +236,30 @@
     <div class="section section--white">
       <div class="wrap wrap--narrow">
         <div class="wrapper">
-          <h3 class="h-3">設計產出</h3>
+          <h4 class="h-4">設計產出</h4>
           <div class="grid--row">
             <div>
               <div class="text">
-                <h4 class="h-4">更清楚且有架構的視覺層級亂</h4>
+                <h3 class="h-3">更清楚且有架構的視覺層級亂</h3>
                 <p>用戶研究時，我們讓用戶進行功能排序法 (closed card
                   sorting)，希望找出用戶習慣的建立測驗的流程。經過用戶研究，我們得出以下結論，並基於此結果，進行了功能順序調整，讓用戶最在意的資訊能優先被填寫。</p>
-                <p class="p-3">60% 用戶習慣先為測驗命名，其餘 40% 偏好先設定測驗模式</p>
-                <p class="p-3">60% 用戶認為最後填寫預估作答時間，才能精準推算測驗所需的時間</p>
-                <p>資訊架構上，我們以進度條的方式呈現，希望清楚顯示各項目填寫的狀態。用戶可以點選畫面側邊欄進度條選單，進入該功能頁面進行詳細資料的填寫與設定。</p>
+                <p class="h-4">60% 用戶習慣先為測驗命名，其餘 40% 偏好先設定測驗模式</p>
+                <p class="h-4">60% 用戶認為最後填寫預估作答時間，才能精準推算測驗所需的時間</p>
               </div>
               <div class="img">
                 <img class=""
-                  src="/assets/img/project/academy-assmt_optimize-flow.svg"
+                  src="/assets/img/project/academy-assmt_optimize-flow.png"
                   alt="" loading="lazy">
-                <img class=""
-                  src="/assets/img/project/academy-assmt_optimize-progress.png"
+              </div>
+              <p>資訊架構上，我們以進度條的方式呈現，希望清楚顯示各項目填寫的狀態。用戶可以點選畫面側邊欄進度條選單，進入該功能頁面進行詳細資料的填寫與設定。</p>
+              <div class="img">
+                <img class="" src="/assets/img/project/academy-assmt_optimize-progress.png"
                   alt="" loading="lazy">
               </div>
             </div>
             <div>
               <div class="text">
-                <h4 class="h-4">符合元件操作行為的視覺呈現</h4>
+                <h3 class="h-3">符合元件操作行為的視覺呈現</h3>
                 <p>為了減少用戶的認知負荷，我們將「設置單題預設分數」與「亂數排序」這兩個不常用的功能進行收納，並放置於頁面上方，除了減少頁面資訊量，也確保用戶在需要操作這些功能時，能快速找到它們。</p>
               </div>
               <div class="img">
@@ -266,7 +268,7 @@
                   alt="" loading="lazy">
               </div>
               <div class="text">
-                <p>為了減少用戶的認知負荷，我們將不常用的功能進行收納，並放置於頁面上方，除了減少頁面資訊量，也讓用戶在需要操作這些功能時能快速的找到它們。</p>
+                <p>我們盡可能減少無意義的元素跟符號，保持頁面上的簡潔，確保用戶能專注在當最重要的任務上。因此當按下「建立」按鈕後，才展開選項讓用戶選擇題目類型。</p>
               </div>
               <div class="img">
                 <img class=""
@@ -292,25 +294,57 @@
               <div class="text">
                 <p>優化後的畫面，透過功能的分類收納，並減少不必要且容易誤導用戶的圖示，調整整體視覺層級讓資訊更方便閱讀。</p>
               </div>
-              <img class="border"
-                  src="/assets/img/project/academy-assmt_optimize-create.gif"
+              <div class="img imgStretch">
+                <img class="" src="/assets/img/project/academy-assmt_optimize-create.gif"
                   alt="" loading="lazy">
+              </div>
+              <div class="img">
+                <img class=""
+                src="/assets/img/project/academy-assmt_befre-after-create.png"
+                alt="" loading="lazy">
+              </div>
             </div>
             <div>
               <div class="text">
-                <h4 class="h-4">加入用戶研究洞見：預覽功能</h4>
-                <p>用戶訪談時，我們得到了很多回饋，其中包括希望可以進行測驗預覽，因此這次優化中我們也加 入了這個功能。</p>
+                <h3 class="h-3">加入用戶研究洞見：預覽功能</h3>
+                <p>用戶訪談時，我們得到了很多回饋，其中包括希望可以進行測驗預覽，因此這次優化中我們也加入了這個功能。</p>
               </div>
-              <div class="img">
-                <img class="border"
+              <div class="img imgStretch">
+                <img class="mb-24"
                   src="/assets/img/project/academy-assmt_optimize-preview.gif"
                   alt="" loading="lazy">
               </div>
             </div>
             <div>
               <div class="text">
-                <h4 class="h-4">把存檔掌控權較給用戶</h4>
-                <p>「知道編輯的內容有被完整的儲存」對內容提供者而言，是非常重要的。當題目建立到一個段落時，他們就會想先進行存檔，也會隨時都想確認剛剛做的新增或修改有沒有被儲存，好讓他們能安心將剩下的題目建立完，或轉而去執行其他工作任務。</p>
+                <h3 class="h-3">可以快速瀏覽的模式比較表格</h3>
+                <p>過去「練習 (Quiz)」與「考試 (Exam)」兩種模式差異的說明不夠明顯，也必須透過不直覺的切換方式才能檢視。新版設計透過表格呈現，讓用戶能一目了然知道兩者的功能差異。</p>
+              </div>
+              <div class="img">
+                <img class="border"
+                  src="/assets/img/project/academy-assmt_befre-after-mode.png" alt="" loading="lazy">
+              </div>
+            </div>
+            <div>
+              <div class="text">
+                <h3 class="h-3">自動換算及彈性自訂題目的分數</h3>
+                <p>在先前的設計中，考試 (Exam) 的通過標準是以百分比為基準，例如: 若通關標準為設定為 80 %，總題數 10 題必須至少答對 8 題才算通過測驗。但當百分比與總題數相乘所得出的過關題數不為整數時，會呈現不符合用戶預期的結果，例如: 若通關標準為設定為 80 %，總題數 8 題必須至少答對 6.4 題才算通過測驗。</p>
+                <p>因此我們讓用戶在添加測驗題目時，能設定各題分數，並同時看到通關標準分數與總分數，一目瞭然的查看分數計算是否符合預期。</p>
+              </div>
+              <div class="img">
+                <img class=""
+                  src="/assets/img/project/academy-assmt_optimize-auto-convert.png"
+                  alt="" loading="lazy">
+                <img class=""
+                src="/assets/img/project/academy-assmt_optimize-set-default-score.png"
+                alt="" loading="lazy">
+              </div>
+            </div>
+            <div>
+              <div class="text">
+                <h4 class="h-4">把存檔掌控權交給用戶</h4>
+                <p class="h-3">「知道編輯的內容有被完整儲存」對內容提供者而言非常重要。</p>
+                <p>當題目建立到一個段落時，他們就會想先進行存檔，也會隨時都想確認剛剛做的新增或修改有沒有被儲存，好讓他們能安心將剩下的題目建立完，或轉而去執行其他工作任務。</p>
                 <p>過去雖然有自動存檔的機制，但用戶完全無法從畫面中知道系統是否有進行存檔，以及存檔的時間。在新版設計中，我們提供用戶手動儲存的功能，並在旁邊顯示存檔時間。</p>
               </div>
               <div class="img">
@@ -327,12 +361,14 @@
       <div class="wrap wrap--narrow">
         <div class="wrapper">
           <div>
-            <h3 class="h-3">專案成果</h3>
+            <h4 class="h-4">專案成果</h4>
             <div>
               <p>為了確保的優化後版本對使用者有良好的影響，我們對新版本進行了測試。結果是這次的改版有效的提高了內容生產者建立測驗的效率，而我們也從用戶身上獲得許多良好的反饋。</p>
               <img src="/assets/img/project/academy-assmt_achieve.svg" alt=""
                 style="margin-bottom: 24px;" loading="lazy">
               <p>整體來說，內容生產者花費了更少的時間在建立測驗，在固定時間內能建立的測驗題數更多了。這些數字證明了我們的用戶在我們的產品有更高的效率，幫助他們把工作更快速且精準地完成。</p>
+              <p>以下是這一個半月的專案，從探索、定義、發想到最後設計產出交付給工程師的 interaction flow。</p>
+              <img src="/assets/img/project/academy-assmt_interaction-flow.png" alt="" loading="lazy">
             </div>
           </div>
         </div>
@@ -342,7 +378,7 @@
       <div class="wrap wrap--narrow">
         <div class="wrapper">
           <div>
-            <h3 class="h-3">反思與學習</h3>
+            <h4 class="h-4">反思與學習</h4>
             <div>
               <p>這次的迭代，因為視覺及資訊架構的調整，導致開發團隊用了比原本規畫還多了一倍的時間進行重構。過程中產品團隊也不斷討論，嘗試找到時間、資源、限制和目標之間的平衡點。</p>
               <p>應用 80/20 法則安排功能的優化優先級，針對 80% 用戶常用的功能做優先設計，剩餘 20%
@@ -357,17 +393,17 @@
     <div class="section section--black">
       <div class="wrap wrap--wide">
         <div class="wrapper">
-          <a href="/project/ch-design-system.html" class="grid--byProject">
+          <a href="/project/myjouranl-redesign.html" class="grid--byProject">
             <div class="img">
-              <img src="/assets/img/project/ch-design-system_cover.png"
+              <img src="/assets/img/project/academy-myjouranl_cover.png"
                 alt="" loading="lazy">
             </div>
             <div class="text">
               <h5 class="next">Next Project</h5>
-              <h3 class="h-2">CH Design System</h3>
-              <h4 class="h-4">用一致的設計語彙提高開發及協作效率</h4>
-              <div class="hashtag"># Design System</div><div class="hashtag">#
-                Web</div><div class="hashtag"># Mobile</div>
+              <h3 class="h-2">Redesign Academy myJouranl</h3>
+              <h4 class="h-4">打造更友善的搜尋及瀏覽體驗</h4>
+              <div class="hashtag"># UI/UX Design</div><div class="hashtag">#
+                Web</div><div class="hashtag"># APP</div>
             </div>
           </a>
         </div>
