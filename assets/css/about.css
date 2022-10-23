@@ -360,15 +360,15 @@ template {
   line-height: 1.4;
 }
 
-.h-3, .indicator, .exp__title h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
+.h-3, .exp__title h3 {
+  font-size: 1.75rem;
+  font-weight: 400;
   line-height: 1.4;
 }
 
-.h-4 {
+.h-4, .indicator {
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.6;
   color: #1c1c1e;
   margin: 0 0 24px 0;
@@ -477,7 +477,7 @@ strong {
 }
 
 .blockquote--light:before, .blockquote--light:after {
-  background: #fafafa;
+  background: #ffffff;
 }
 
 .blockquote--dark:before, .blockquote--dark:after {
@@ -524,12 +524,12 @@ body {
 }
 
 ::-moz-selection {
-  color: #fafafa;
+  color: #ffffff;
   background: #1c1c1e;
 }
 
 ::selection {
-  color: #fafafa;
+  color: #ffffff;
   background: #1c1c1e;
 }
 
@@ -548,7 +548,7 @@ body {
 
 .section--black {
   background: #1c1c1e;
-  color: #fafafa;
+  color: #ffffff;
   position: relative;
 }
 
@@ -558,7 +558,7 @@ body {
 .section--black .h-3,
 .section--black .h-4,
 .section--black .h-5 {
-  color: #fafafa;
+  color: #ffffff;
 }
 
 .section--white {
@@ -626,7 +626,7 @@ body {
 }
 
 .header__logo path {
-  fill: #fafafa;
+  fill: #ffffff;
 }
 
 .header .burger {
@@ -709,7 +709,7 @@ body {
 
 .nav .menu__name {
   margin: 0 0 0 40px;
-  color: #fafafa;
+  color: #ffffff;
   font-size: 1.25rem;
   font-weight: 700;
   position: relative;
@@ -793,7 +793,7 @@ body {
   top: -24px;
   left: -24px;
   margin: -12px 0 0 -12px;
-  background: #fafafa;
+  background: #ffffff;
   border-radius: 50%;
   mix-blend-mode: exclusion;
   z-index: 99;
@@ -1068,7 +1068,7 @@ img, .img {
   padding: 6px 10px;
   border: 1px solid #1c1c1e;
   color: #1c1c1e;
-  background: #fafafa;
+  background: #ffffff;
   font-weight: 400;
   margin-right: 8px;
   margin-bottom: 8px;
@@ -1082,7 +1082,7 @@ img, .img {
 
 .hashtag {
   display: inline-block;
-  color: #fafafa;
+  color: #ffffff;
   font-size: 1rem;
   font-weight: 400;
   margin-right: 16px;
@@ -1090,7 +1090,7 @@ img, .img {
 
 /*---------- callout ----------*/
 .callout {
-  background: #fafafa;
+  background: #ffffff;
   padding: 40px;
   border: 1px solid #ECECEC;
   border-top: 4px solid #2F80ED;
@@ -1111,6 +1111,7 @@ img, .img {
 }
 
 .borderbox .borderbox__content {
+  background: #ffffff;
   flex: 1 1 0;
   padding: 24px;
   border: 1px solid #ECECEC;
@@ -1132,7 +1133,7 @@ img, .img {
 
 /*---------- bg ----------*/
 .bg--white {
-  background: #fafafa;
+  background: #ffffff;
 }
 
 .bg--black {
@@ -1432,7 +1433,7 @@ img, .img {
 }
 
 #achieve p {
-  color: #fafafa;
+  color: #ffffff;
 }
 
 #achieve img {
