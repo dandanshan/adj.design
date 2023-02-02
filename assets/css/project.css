@@ -599,6 +599,7 @@ body {
   height: 45px;
   z-index: 99;
   mix-blend-mode: exclusion;
+  backdrop-filter: blur(4px);
 }
 
 .header:before, .header:after {
